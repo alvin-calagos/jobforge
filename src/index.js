@@ -10,6 +10,8 @@ import App from './App';
 import Dashboard from './pages/Dashboard';
 import Organisations from './pages/Organisations';
 import Organisation from './pages/Organisation';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 

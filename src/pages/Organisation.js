@@ -1,6 +1,7 @@
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { getOrganisation, deleteOrganisation } from "../data";
-
+import Button from 'react-bootstrap/Button';
+import TextInput from "../components/inputs/TextInput";
 
 function Organisation() {
   let navigate = useNavigate();
@@ -15,15 +16,17 @@ function Organisation() {
       </p>
       <p>Due Date: {organisation.due}</p>
       <p>
-        <button
+        <Button
+          variant="primary"
           onClick={() => {
             deleteOrganisation(organisation.number);
             navigate("/organisations" + location.search);
           }}
         >
           Delete
-        </button>
+        </Button>
       </p>
+      <TextInput/>
     </main>
   );
 }
