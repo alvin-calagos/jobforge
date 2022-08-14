@@ -1,17 +1,22 @@
 import React from "react";
 
-function TextInput(props) { 
+function DateInput(props) { 
+
+  const date = new Date();
+  const defaultValue = date.toLocaleDateString('en-CA');
+
   return ( 
     <>
       <div className="text-input-wrapper">
         <label>{props.label}</label>
         <input 
-          type="text" 
+          type="date" 
           placeholder={props.placeholder}
+          defaultValue={defaultValue}
         />
       </div>
     </>
   );
 };
  
- export default TextInput;
+ export default DateInput;

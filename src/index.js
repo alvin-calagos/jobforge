@@ -10,7 +10,7 @@ import App from './App';
 import Dashboard from './pages/Dashboard';
 import Organisations from './pages/Organisations';
 import Organisation from './pages/Organisation';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import NewOrganisation from './pages/OrganisationNew';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +19,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="dashboard" element={<Dashboard />} />
+        <Route path="new-organisation" element={<NewOrganisation />} />
         <Route path="organisations" element={<Organisations />}>
           <Route path=":organisationId" element={<Organisation />} />
         </Route>

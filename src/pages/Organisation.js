@@ -1,7 +1,6 @@
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { getOrganisation, deleteOrganisation } from "../data";
 import Button from 'react-bootstrap/Button';
-import TextInput from "../components/inputs/TextInput";
 
 function Organisation() {
   let navigate = useNavigate();
@@ -26,7 +25,6 @@ function Organisation() {
           Delete
         </Button>
       </p>
-      <TextInput/>
     </main>
   );
 }
