@@ -32,22 +32,22 @@ function Organisations() {
             return name.startsWith(filter.toLowerCase());
           })
           .map((organisation) => (
-          <NavLink
-            style={({ isActive }) => {
-              return {
-                display: "block",
-                margin: "1rem 0",
-                color: isActive ? "red" : "",
-              };
-            }}
-            to={`/organisations/${organisation.number}`}
-            key={organisation.number}
-          >
-            {organisation.name}
-          </NavLink>
-        ))}
+            <NavLink
+              style={({ isActive }) => {
+                return {
+                  display: "block",
+                  margin: "1rem 0",
+                  color: isActive ? "red" : "",
+                };
+              }}
+              to={`/organisations/${organisation.number}`}
+              key={organisation.number}
+            >
+              {organisation.name}
+            </NavLink>
+          ))}
       </nav>
-      <Outlet />  
+      <Outlet />
     </div>
   );
 }

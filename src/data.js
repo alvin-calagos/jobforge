@@ -33,12 +33,10 @@ let organisations = [
 
 export function getOrganisations() {
   return organisations;
-};
+}
 export function getOrganisation(number) {
-  return organisations.find(
-    (organisation) => organisation.number === number
-  );
-};
+  return organisations.find((organisation) => organisation.number === number);
+}
 export function deleteOrganisation(number) {
   organisations = organisations.filter(
     (organisation) => organisation.number !== number

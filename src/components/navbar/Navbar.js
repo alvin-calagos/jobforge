@@ -1,9 +1,9 @@
-import './Navbar.css';
-import React, {Fragment} from "react";
+import "./Navbar.css";
+import React, { Fragment } from "react";
 import { Outlet, NavLink } from "react-router-dom";
 
-function Navbar() { 
-  return ( 
+function Navbar() {
+  return (
     <>
       <nav className="navbar">
         <NavLink to="/dashboard">Dashboard</NavLink>
@@ -13,6 +13,6 @@ function Navbar() {
       <Outlet />
     </>
   );
-};
- 
- export default Navbar;
+}
+
+export default Navbar;

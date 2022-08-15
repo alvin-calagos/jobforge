@@ -1,6 +1,6 @@
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { getOrganisation, deleteOrganisation } from "../data";
-import Button from 'react-bootstrap/Button';
+import Button from "react-bootstrap/Button";
 
 function Organisation() {
   let navigate = useNavigate();
