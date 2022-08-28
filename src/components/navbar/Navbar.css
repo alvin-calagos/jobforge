@@ -1,11 +1,18 @@
 .navbar {
-  height: 50px;
-  width: 100vw;
+  height: 25px;
   display: flex;
   position: relative;
-  background: #2e2e2e;
-  align-items: flex-start;
+  background: #0d6889;
+  align-items: center;
   padding: 20px;
   color: white;
   justify-content: space-between;
+}
+.nav-right {
+  width: 20%;
+}
+
+.cog-icon {
+  font-size: 35px;
+  vertical-align: middle;
 }

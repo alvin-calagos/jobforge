@@ -1,0 +1,17 @@
+.outer-eye {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 20px 2px 20px 2px;
+  rotate: 45deg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-eye {
+  width: 9px;
+  height: 9px;
+  border-radius: 5px;
+  background-color: rgb(29, 23, 23);
+  z-index: 1;
+}
