@@ -7,13 +7,15 @@ function SideNav() {
   return (
     <>
       <nav className="sidenav">
-        <div className="sidenav-top">test</div>
+        <div className="sidenav-top"></div>
         <div className="sidenav-centre">
           <div className="add-container">
             <span className="plus-icon">+</span>
           </div>
           <div className="view-container">
-            <EyeIcon />
+            <div className="eye-container">
+              <EyeIcon />
+            </div>
           </div>
         </div>
         <div className="sidenav-bottom">
