@@ -1,27 +1,27 @@
 .sidenav {
   height: 100vh;
-  width: 65px;
+  width: 55px;
   display: flex;
   float: left;
-  background: #1b1c1f;
+  background: #4b8f7e;
   align-items: center;
-
   color: white;
   justify-content: flex-start;
   flex-direction: column;
+  box-shadow: 1px 0px 3px 0px #b6b6b6;
+  border-radius: 0 0 7px 0;
 }
 .sidenav-top {
   height: 80px;
 }
 .sidenav-centre {
   display: flex;
-  height: 150px;
   flex-direction: column;
   justify-content: space-between;
 }
 .add-container {
   margin-top: 10px;
-  background-color: #51a8f4;
+  background-color: #3bc4a1;
   border: 2px solid white;
   width: 45px;
   height: 45px;
@@ -42,7 +42,7 @@
 }
 .view-container {
   margin-top: 10px;
-  background-color: #51a8f4;
+  background-color: #3bc4a1;
   border: 2px solid white;
   width: 45px;
   height: 45px;
@@ -74,4 +74,21 @@
   height: 45px;
   border-radius: 25px;
   cursor: pointer;
+}
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
 }

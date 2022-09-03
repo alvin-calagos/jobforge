@@ -1,0 +1,26 @@
+.links-list {
+  background-color: rgb(249, 249, 249);
+  width: 200px;
+  height: 300px;
+  color: black;
+  position: absolute;
+  left: 65px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid 1px rgb(158, 158, 158);
+  opacity: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+.links-list:hover {
+  opacity: 100%;
+}
+.links {
+  width: 100%;
+  padding: 20px 0 20px 0;
+}
+.links:hover {
+  background-color: rgb(195, 195, 195);
+  cursor: pointer;
+}
