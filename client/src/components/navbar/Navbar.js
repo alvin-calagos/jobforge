@@ -6,16 +6,13 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <div className="nav-left">JOB FORGE</div>
+        <div className="nav-left"></div>
         <div className="nav-centre">
           <NavLink to="/dashboard">
             <span className="cog-icon">⚙</span>
           </NavLink>
         </div>
-        <div className="nav-right">
-          <NavLink to="/organisations">Organisations</NavLink>
-          <NavLink to="/new-organisation">Add Organisation</NavLink>
-        </div>
+        <div className="nav-right">JOB FORGE</div>
       </nav>
       <Outlet />
     </>

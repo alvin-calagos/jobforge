@@ -4,17 +4,21 @@ import EyeIcon from "../designs/EyeIcon"
 import LinksList from "../lists/LinksList"
 
 function SideNav() {
-  const [isShown, setIsShown] = useState(false)
+  const [linksListIsShown, setIsLinkListShown] = useState(false)
 
   return (
     <>
+      {linksListIsShown && <LinksList />}
       <nav className="sidenav">
         <div className="sidenav-top"></div>
         <div className="sidenav-centre">
-          <div className="add-container" onClick={() => setIsShown(!isShown)}>
+          <div
+            className="add-container"
+            onClick={() => setIsLinkListShown(!linksListIsShown)}
+          >
             <span className="plus-icon">+</span>
           </div>
-          {isShown && <LinksList />}
+
           <div className="view-container">
             <div className="eye-container">
               <EyeIcon />
