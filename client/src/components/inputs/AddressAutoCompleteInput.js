@@ -1,8 +1,5 @@
 import React from "react"
-import PlacesAutocomplete, {
-  geocodeByAddress,
-  getLatLng
-} from "react-places-autocomplete"
+import PlacesAutocomplete, { geocodeByAddress } from "react-places-autocomplete"
 
 class AddressAutoCompleteInput extends React.Component {
   constructor(props) {
@@ -15,8 +12,6 @@ class AddressAutoCompleteInput extends React.Component {
   handleSelect = (address) => {
     geocodeByAddress(address)
       .then((results) => console.log(results))
-      .then((results) => getLatLng(results[0]))
-      .then((latLng) => console.log("Success", latLng))
       .catch((error) => console.error("Error", error))
   }
   render() {
@@ -52,7 +47,9 @@ class AddressAutoCompleteInput extends React.Component {
                       style
                     })}
                   >
-                    <span>{suggestion.description}</span>
+                    <span className="form-control">
+                      {suggestion.description}
+                    </span>
                   </div>
                 )
               })}

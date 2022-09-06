@@ -1,8 +1,8 @@
-import React from "react";
+import React from "react"
 
 function DateInput(props) {
-  const date = new Date();
-  const defaultValue = date.toLocaleDateString("en-CA");
+  const date = new Date()
+  const defaultValue = date.toLocaleDateString("en-CA")
 
   return (
     <>
@@ -12,10 +12,12 @@ function DateInput(props) {
           type="date"
           placeholder={props.placeholder}
           defaultValue={defaultValue}
+          value-={props.value}
+          onChange={props.onChange}
         />
       </div>
     </>
-  );
+  )
 }
 
-export default DateInput;
+export default DateInput

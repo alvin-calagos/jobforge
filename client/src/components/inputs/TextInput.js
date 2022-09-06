@@ -7,9 +7,11 @@ function TextInput(props) {
       <div className="text-input-wrapper">
         <label>{props.label}</label>
         <input
-          className="text-input"
-          type="text"
+          className="form-control"
+          type={props.type}
           placeholder={props.placeholder}
+          value={props.value}
+          onChange={props.onChange}
         />
       </div>
     </>
